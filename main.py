@@ -34,7 +34,7 @@ def readfile():
         p = Path(name)
         if p.exists() and p.is_file():
             with open(p,'r') as fs:
-                data = fs.read
+                data = fs.read()
                 print(data)
             print("READ SUCESSFULLY")
         else:
